@@ -1,0 +1,8 @@
+source "C:/Users/Niko/esp/v5.2.1/esp-idf/components/bootloader/Kconfig.projbuild"
+source "C:/Users/Niko/esp/v5.2.1/esp-idf/components/esp_app_format/Kconfig.projbuild"
+source "C:/Users/Niko/esp/v5.2.1/esp-idf/components/esp_rom/Kconfig.projbuild"
+source "C:/Users/Niko/esp/v5.2.1/esp-idf/components/esptool_py/Kconfig.projbuild"
+source "C:/Users/Niko/esp/v5.2.1/esp-idf/components/partition_table/Kconfig.projbuild"
+source "C:/Users/Niko/esp/v5.2.1/esp-rainmaker/examples/greenhouse/main/Kconfig.projbuild"
+source "C:/Users/Niko/esp/v5.2.1/esp-rainmaker/components/esp_rainmaker/Kconfig.projbuild"
+source "C:/Users/Niko/esp/v5.2.1/esp-rainmaker/examples/common/app_wifi/Kconfig.projbuild"

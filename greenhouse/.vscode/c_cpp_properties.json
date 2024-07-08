@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/Users/Niko/esp/v5.2.1/**",
+                "C:/Users/Niko/esp/v5.2.1/esp-rainmaker/**",
+                "C:/Users/Niko/esp/v5.2.1/esp-rainmaker/components/esp_rainmaker/**",
+                "C:/Users/Niko/esp/v5.2.1/esp-rainmaker/components/esp_rainmaker/include/*"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "C:\\MinGW\\bin\\gcc.exe",
+            "cStandard": "c11",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "windows-gcc-x86",
+            "compileCommands": "${workspaceFolder}/build/compile_commands.json"
+        }
+    ],
+    "version": 4
+}

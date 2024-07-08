@@ -1,0 +1,34 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\Niko\.espressif\python_env\idf5.2_py3.11_env\Lib\site-packages\kconfgen\__main__.py", line 16, in <module>
+    main()
+  File "C:\Users\Niko\.espressif\python_env\idf5.2_py3.11_env\Lib\site-packages\kconfgen\core.py", line 319, in main
+    config = kconfiglib.Kconfig(args.kconfig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Niko\.espressif\python_env\idf5.2_py3.11_env\Lib\site-packages\kconfiglib.py", line 947, in __init__
+    self._init(filename, warn, warn_to_stderr, encoding)
+  File "C:\Users\Niko\.espressif\python_env\idf5.2_py3.11_env\Lib\site-packages\kconfiglib.py", line 1085, in _init
+    self._parse_block(None, self.top_node, self.top_node).next = None
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Niko\.espressif\python_env\idf5.2_py3.11_env\Lib\site-packages\kconfiglib.py", line 2989, in _parse_block
+    prev = self._parse_block(None, parent, prev)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Niko\.espressif\python_env\idf5.2_py3.11_env\Lib\site-packages\kconfiglib.py", line 2989, in _parse_block
+    prev = self._parse_block(None, parent, prev)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Niko\.espressif\python_env\idf5.2_py3.11_env\Lib\site-packages\kconfiglib.py", line 3028, in _parse_block
+    self._parse_block(_T_ENDMENU, node, node)
+  File "C:\Users\Niko\.espressif\python_env\idf5.2_py3.11_env\Lib\site-packages\kconfiglib.py", line 3100, in _parse_block
+    raise KconfigError(
+kconfiglib.KconfigError: error: expected 'endmenu' at end of 'C:/Users/Niko/esp/v5.2.1/esp-rainmaker/examples/greenhouse/main/Kconfig.projbuild'
+CMake Error at C:/Users/Niko/esp/v5.2.1/esp-idf/tools/cmake/kconfig.cmake:209 (message):
+  Failed to run kconfgen
+  (C:/Users/Niko/.espressif/python_env/idf5.2_py3.11_env/Scripts/python.exe;-m;kconfgen;--list-separator=semicolon;--kconfig;C:/Users/Niko/esp/v5.2.1/esp-idf/Kconfig;--sdkconfig-rename;C:/Users/Niko/esp/v5.2.1/esp-idf/sdkconfig.rename;--config;C:/Users/Niko/esp/v5.2.1/esp-rainmaker/examples/greenhouse/sdkconfig;--defaults;C:/Users/Niko/esp/v5.2.1/esp-rainmaker/examples/greenhouse/sdkconfig.defaults;--defaults;C:/Users/Niko/esp/v5.2.1/esp-rainmaker/examples/greenhouse/sdkconfig.defaults.esp32;--env-file;C:/Users/Niko/esp/v5.2.1/esp-rainmaker/examples/greenhouse/build/config.env).
+  Error 1
+Call Stack (most recent call first):
+  C:/Users/Niko/esp/v5.2.1/esp-idf/tools/cmake/build.cmake:615 (__kconfig_generate_config)
+  C:/Users/Niko/esp/v5.2.1/esp-idf/tools/cmake/project.cmake:605 (idf_build_process)
+  CMakeLists.txt:16 (project)
+
+

@@ -1,0 +1,40 @@
+C:/Users/Niko/esp/v5.2.1/esp-rainmaker/examples/greenhouse/main/Kconfig.projbuild:1: warning: style: quotes recommended around 'Greenhouse' in 'menu Greenhouse configuration'
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\Niko\.espressif\python_env\idf5.2_py3.11_env\Lib\site-packages\kconfgen\__main__.py", line 16, in <module>
+    main()
+  File "C:\Users\Niko\.espressif\python_env\idf5.2_py3.11_env\Lib\site-packages\kconfgen\core.py", line 319, in main
+    config = kconfiglib.Kconfig(args.kconfig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Niko\.espressif\python_env\idf5.2_py3.11_env\Lib\site-packages\kconfiglib.py", line 947, in __init__
+    self._init(filename, warn, warn_to_stderr, encoding)
+  File "C:\Users\Niko\.espressif\python_env\idf5.2_py3.11_env\Lib\site-packages\kconfiglib.py", line 1085, in _init
+    self._parse_block(None, self.top_node, self.top_node).next = None
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Niko\.espressif\python_env\idf5.2_py3.11_env\Lib\site-packages\kconfiglib.py", line 2989, in _parse_block
+    prev = self._parse_block(None, parent, prev)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Niko\.espressif\python_env\idf5.2_py3.11_env\Lib\site-packages\kconfiglib.py", line 2989, in _parse_block
+    prev = self._parse_block(None, parent, prev)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Niko\.espressif\python_env\idf5.2_py3.11_env\Lib\site-packages\kconfiglib.py", line 3018, in _parse_block
+    node.prompt = (self._expect_str_and_eol(), self.y)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Niko\.espressif\python_env\idf5.2_py3.11_env\Lib\site-packages\kconfiglib.py", line 2575, in _expect_str_and_eol
+    self._trailing_tokens_error()
+  File "C:\Users\Niko\.espressif\python_env\idf5.2_py3.11_env\Lib\site-packages\kconfiglib.py", line 3885, in _trailing_tokens_error
+    self._parse_error("extra tokens at end of line")
+  File "C:\Users\Niko\.espressif\python_env\idf5.2_py3.11_env\Lib\site-packages\kconfiglib.py", line 3879, in _parse_error
+    raise KconfigError("{}error: couldn't parse '{}': {}".format(
+kconfiglib.KconfigError: C:/Users/Niko/esp/v5.2.1/esp-rainmaker/examples/greenhouse/main/Kconfig.projbuild:1: error: couldn't parse 'menu Greenhouse configuration': extra tokens at end of line
+CMake Error at C:/Users/Niko/esp/v5.2.1/esp-idf/tools/cmake/kconfig.cmake:209 (message):
+  Failed to run kconfgen
+  (C:/Users/Niko/.espressif/python_env/idf5.2_py3.11_env/Scripts/python.exe;-m;kconfgen;--list-separator=semicolon;--kconfig;C:/Users/Niko/esp/v5.2.1/esp-idf/Kconfig;--sdkconfig-rename;C:/Users/Niko/esp/v5.2.1/esp-idf/sdkconfig.rename;--config;C:/Users/Niko/esp/v5.2.1/esp-rainmaker/examples/greenhouse/sdkconfig;--defaults;C:/Users/Niko/esp/v5.2.1/esp-rainmaker/examples/greenhouse/sdkconfig.defaults;--defaults;C:/Users/Niko/esp/v5.2.1/esp-rainmaker/examples/greenhouse/sdkconfig.defaults.esp32;--env-file;C:/Users/Niko/esp/v5.2.1/esp-rainmaker/examples/greenhouse/build/config.env).
+  Error 1
+Call Stack (most recent call first):
+  C:/Users/Niko/esp/v5.2.1/esp-idf/tools/cmake/build.cmake:615 (__kconfig_generate_config)
+  C:/Users/Niko/esp/v5.2.1/esp-idf/tools/cmake/project.cmake:605 (idf_build_process)
+  CMakeLists.txt:16 (project)
+
+

@@ -1,0 +1,33 @@
+{
+    "idf.adapterTargetName": "esp32",
+    "files.associations": {
+        "esp_log.h": "c",
+        "nvs_flash.h": "c",
+        "esp_rmaker_standard_types.h": "c",
+        "freertos.h": "c",
+        "dht11.h": "c",
+        "app_priv.h": "c",
+        "app_reset.h": "c",
+        "ws2812_led.h": "c",
+        "string.h": "c",
+        "task.h": "c",
+        "esp_rmaker_standard_devices.h": "c",
+        "device.h": "c",
+        "timers.h": "c",
+        "sdkconfig.h": "c",
+        "esp_rmaker_core.h": "c",
+        "esp_rmaker_standard_params.h": "c",
+        "esp_adc_cal.h": "c",
+        "adc_cali_scheme.h": "c",
+        "adc_oneshot.h": "c",
+        "soil_moisture.h": "c",
+        "math.h": "c",
+        "adc_cali.h": "c",
+        "gpio.h": "c",
+        "esp_wifi.h": "c",
+        "esp_wifi_types.h": "c",
+        "esp_pm.h": "c"
+    },
+    "idf.portWin": "COM4",
+    "idf.flashType": "UART"
+}
